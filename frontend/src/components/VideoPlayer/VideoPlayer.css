@@ -1,0 +1,24 @@
+.VideoPlayer {
+  width: 100%;
+  display: flex;
+  flex-direction: column; 
+  /* border: 3px solid #0c8cb0; */
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+}
+
+
+@media screen and (max-width: 600px) {
+  .VideoPlayer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    /* border: 1px solid brown; */
+  }
+  .VideoPlayer iframe {
+    width: 400px;
+    /* border: 1px solid red; */
+    height: 250px;
+  }
+}

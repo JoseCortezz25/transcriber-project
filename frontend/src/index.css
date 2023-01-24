@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap");
+
+:root {
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+
+  --white-color: #fff;
+  --gray-color: #f4f2f0;
+  --soft-gray-color: #dfdcda;
+  --dark-gray-color: #cac7c5;
+  --black-color: #010001;
+  --soft-black-color: #010001a1;
+  --blue-color: #1e3799;
+  --dark-blue-color: #0c2461;
+
+  --light-blue-color: #66d2ea;
+  --bg-blue-color: #e6fafd;
+  --pd-default: 15px 20px;
+  --pd-alerts: 10px 15px;
+}
+
+a {
+  font-weight: 500;
+  color: var(--blue-color);
+  text-decoration: inherit;
+}
+
+a:hover {
+  color: #535bf2;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--gray-color);
+  font-family: "Montserrat", sans-serif;
+}
+
+
+.App__body {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  grid-template-columns: 1fr 1fr;
+}
+
+.App__header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5%;
+}
+
+.App__welcome {
+  margin-bottom: 32px;
+}
+
+.App__search {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto 0;
+}
+
+.App__search input[type="text"] {
+  background-color: var(--soft-gray-color);
+  border: none;
+  padding: 12px 20px;
+  font-size: 17px;
+  width: 500px;
+  transition: border-color 0.3s ease-in-out;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.App__search input[type="text"]:focus {
+  border-color: var(--soft-gray-color);
+  outline: none;
+}
+
+.App__search form {
+  display: flex;
+}
+
+.App__search button {
+  background-color: var(--soft-gray-color);
+  width: 50px;
+  height: 50px;
+  border: none;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  transition: background-color 150ms ease-in-out;
+  cursor: pointer;
+}
+
+.App__search button img {
+  width: 75%;
+  margin-top: 3px;
+}
+
+.App__search button:hover {
+  background-color: var(--dark-gray-color);
+}
+
+.btn_standard {
+  background-color: var(--black-color);
+  text-transform: uppercase;
+  color: var(--gray-color);
+  padding: 13px 18px;
+  border: 10px;
+  letter-spacing: 2px;
+  cursor: pointer;
+  margin-top: 10px;
+  font-weight: bold;
+  transition: background-color 150ms ease-in-out;
+}
+
+.btn_standard:hover {
+  background-color: var(--soft-black-color);
+}
+
+@media screen and (max-width: 600px) {
+  .App {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .App__welcome {
+    display: flex;
+    margin: auto;
+    margin-bottom: 30px;
+    margin-top: 40px;
+  }
+
+  .App__welcome img{
+    width: 70%;
+    margin: auto;
+  }
+
+  .App__search {
+    width: 100%;
+  }
+
+  .App__search form {
+    width: 60%;
+  }
+
+  .App__search input[type="text"] {
+    width: 90%;
+  }
+  .App__body {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+}

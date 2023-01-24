@@ -1,0 +1,10 @@
+.InfoAlert {
+  background-color: var(--light-blue-color);
+  width: 80%;
+  padding: var(--pd-default);
+  color: var(--bg-blue-color);
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 10px;
+  margin-top: 10px;
+}

@@ -1,0 +1,5 @@
+uvicorn==0.20.0
+fastapi==0.89.1
+whisper @ git+https://github.com/openai/whisper.git@f82bc59f5ea234d4b97fb2860842ed38519f7e65
+ffmpeg-python==0.2.0
+pytube==12.1.2
